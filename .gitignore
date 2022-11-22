@@ -1,0 +1,3 @@
+.vscode/*
+target/*
+terraform-script/.terraform/*
