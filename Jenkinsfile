@@ -1,18 +1,9 @@
-def gv
-
 pipeline{
     agent any
     tools {
         maven 'maven-3.8'
     }
     stages{
-        stage("init"){
-            steps{
-                script{
-                    gv = load "script.groovy"
-                }
-            }
-        }
         stage("incrementVersion"){
             steps{
                 script{
